@@ -3,14 +3,14 @@
    ============================================ */
 
 :root {
-    --primary-dark: #2a1515;
-    --secondary-dark: #3a2020;
-    --accent-color: #c41e3a;
-    --text-light: #f5e6e0;
-    --text-muted: #d4a89a;
-    --border-color: #4a3030;
-    --gold-accent: #e74c3c;
-    --bg-cream: #3a2424;
+    --primary-dark: #0f0f0f;
+    --secondary-dark: #1a1a1a;
+    --accent-color: #a8b5ff;
+    --text-light: #f5f5f5;
+    --text-muted: #b0b0b0;
+    --border-color: #2a2a2a;
+    --gold-accent: #c9a8ff;
+    --bg-cream: #181818;
 }
 
 * {
@@ -25,7 +25,7 @@ html {
 
 body {
     font-family: 'Cinzel', 'Bodoni MT', 'Garamond', serif;
-    background: linear-gradient(135deg, #3a2424 0%, #4a3030 50%, #3a2020 100%);
+    background: linear-gradient(135deg, #181818 0%, #0f0f0f 50%, #1a1a1a 100%);
     background-attachment: fixed;
     color: var(--text-light);
     line-height: 1.8;
@@ -41,8 +41,8 @@ body::before {
     width: 100%;
     height: 100%;
     background: 
-        radial-gradient(ellipse at 20% 50%, rgba(196, 30, 58, 0.1) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 80%, rgba(231, 76, 60, 0.08) 0%, transparent 50%);
+        radial-gradient(ellipse at 20% 50%, rgba(168, 181, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(201, 168, 255, 0.06) 0%, transparent 50%);
     pointer-events: none;
     z-index: -1;
 }
@@ -157,7 +157,7 @@ body::before {
 .education-item:hover {
     padding-left: 30px;
     border-left-color: var(--gold-accent);
-    box-shadow: -4px 0 12px rgba(196, 30, 58, 0.15);
+    box-shadow: -4px 0 12px rgba(168, 181, 255, 0.2);
 }
 
 .degree {
@@ -197,7 +197,7 @@ body::before {
     position: relative;
     overflow: hidden;
     backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(196, 30, 58, 0.1);
+    box-shadow: 0 8px 32px rgba(168, 181, 255, 0.08);
 }
 
 .skill-card::before {
@@ -207,15 +207,15 @@ body::before {
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: var(--accent-color);
+    background: linear-gradient(90deg, var(--accent-color), var(--gold-accent));
     transition: height 0.3s ease;
 }
 
 .skill-card:hover {
     border-color: var(--gold-accent);
-    background-color: rgba(196, 30, 58, 0.08);
+    background-color: rgba(168, 181, 255, 0.05);
     transform: translateY(-8px);
-    box-shadow: 0 16px 48px rgba(196, 30, 58, 0.2);
+    box-shadow: 0 16px 48px rgba(168, 181, 255, 0.15);
 }
 
 .skill-card:hover::before {
